@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <header id="title">
+        <h1>Random Password Generator</h1>
+    </header>
+    <main id="contents">
+        <p>Password :
+            <input type="text" name="outputPassword" id="outputPassword" readonly="">
+        </p>
+        <p>Password Length :
+            <input type="range" name="lengthPassword" id="lengthPassword" min="6" max="16" value="6"><span id="cont">6</span>
+        </p>
+        <div id="generateBtn" onclick="getPassword()" onselectstart="return false">Generate</div>
+    </main>
+    <footer id="footer-end">
+        <p><a href="https://github.com/PabloRuanP" target="_blank">&copy; Developed by: Pablo Ruan</a></p>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>
